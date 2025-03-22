@@ -1,0 +1,93 @@
+/* Footer Styles */
+.footer {
+    background: #2e2e2e; /* Dark Gray Background */
+    color: #fff;
+    padding: 25px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Footer Content Layout - Side by Side */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h5 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #00aaff; /* Blue color for headings */
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 14px;
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-section a:hover {
+    color: #00aaff;
+}
+
+/* WhatsApp Button */
+.btn-whatsapp {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn-whatsapp:hover {
+    background: #1ebe57;
+    transform: scale(1.05);
+}
+
+/* Divider Line */
+.footer-divider {
+    width: 60%;
+    height: 3px;
+    background: #00aaff;
+    margin: 15px auto;
+    transition: width 0.3s;
+}
+
+.footer-divider:hover {
+    width: 80%;
+}
+
+/* Copyright Section */
+.footer-copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-top: 1px solid #444;
+}
+
+.footer-copyright span {
+    color: #00aaff;
+    font-weight: bold;
+}

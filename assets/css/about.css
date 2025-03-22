@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #004aad;
+    margin-bottom: 20px;
+    text-align: center; /* Center the title */
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.about-text {
+    font-size: 18px;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Team Section */
+.team {
+    padding: 60px 20px;
+    background: #f8f9fa;
+}
+
+.team-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #004aad;
+    margin-bottom: 40px;
+}
+
+/* Team Member Alternating Layout */
+.team-member {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Alternate left-right layout */
+.team-member:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Hover Effect */
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+/* Team Image */
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover img {
+    transform: rotate(5deg);
+}
+
+/* Member Info */
+.member-info {
+    flex: 1;
+}
+
+.member-info h3 {
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.member-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    font-size: 18px;
+    color: #004aad;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff5733;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-member:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .team-member img {
+        width: 150px;
+        height: 150px;
+    }
+}

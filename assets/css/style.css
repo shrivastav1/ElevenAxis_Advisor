@@ -1,0 +1,153 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+.navbar-nav {
+    margin: auto; /* Centers the menu items */
+    display: flex;
+    justify-content: center;
+    width: 50%; /* Adjust width to center properly */
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px; /* Adds spacing between menu items */
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    transition: color 0.3s ease-in-out;
+    font-size: 18px; /* Makes the menu items slightly larger */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107 !important; /* Changes to yellow on hover */
+    /* font-weight: bolder; Makes the font weight lighter */
+}
+
+/* Navbar Brand Logo */
+.navbar-brand  {
+    margin-left: 100px;
+}
+
+/* About Us */
+.about-us {
+    background: #eef2f7; /* Light background for differentiation */
+    padding: 60px 20px;
+    position: relative;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff; /* Professional blue */
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #007bff;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+
+.about-desc {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333; /* Professional dark text */
+    max-width: 800px;
+    margin: 0 auto 10px;
+}
+
+/* Modern HR Line */
+.custom-hr {
+    width: 200px; /* Longer HR line */
+    height: 4px;
+    background: linear-gradient(to right, #007bff, #0056b3); /* Gradient blue */
+    border-radius: 3px;
+    margin: 30px auto;
+    transition: width 0.4s ease-in-out;
+}
+
+/* Hover effect: Expands slightly */
+.custom-hr:hover {
+    width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 91, 187, 0.3);
+}
+
+
+/* Services Section */
+.services {
+    text-align: center;
+    color: #007bff; 
+    
+}
+
+.service-item {
+    position: relative;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 15px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.service-item .icon {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.service-item h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Hover Effect: Gradient Overlay */
+.service-item .overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 123, 255, 0.9) 60%, rgba(255, 255, 255, 0.1) 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    transition: top 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover .overlay {
+    top: 0;
+    opacity: 1;
+}
+
+.service-item .overlay p {
+    margin: 0;
+    font-size: 16px;
+}
